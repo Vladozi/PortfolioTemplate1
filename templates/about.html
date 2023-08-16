@@ -1,0 +1,57 @@
+
+{% extends "basic.html" %}
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = '/styles/style.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename = '/styles/about.css')}}">
+
+{% endblock %}
+{% block title %}
+About
+{% endblock %}
+
+{% block body %}
+<header>
+       
+      
+    <!-- <i class="fa-solid fa-bars menu-icon "></i>
+    <i class="fa-solid fa-xmark xmark bg-transperent"></i> -->
+ <div class="container" onclick="Change(this)">
+    <div class="menu menu"></div>
+    <div class="menu-1 menu"></div>
+    <div class="menu-2 menu"></div>
+  </div>
+    <div class="main-nav elements close">
+
+      
+      <nav>
+        
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#section-projects">Work</a></li>
+            <li><a href="#section-footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+<section class="about">
+<img src="/static/pictures/me.png" alt="my photo" class="my-img">
+   <div class="about-container">
+    <p class="heading">About Me</p>
+    <span class="heading-big">About </span>
+
+    <p class="person name">Name:    <span>Lado Sichinava</span></p>
+    <br>
+    <p class="person">Date of birth:    <span>February 01,2007</span></p>
+    
+    <br>
+    <p class="person">Adress:    <span>Lesichine Mshvidoba street</span></p>
+    <br>
+    <p class="person">Email:    <span>programming304@gmail.com</span></p>
+    <br>
+    <p class="person">Phone:   <span>+995-592-145-433</span></p>
+    <br>
+   
+   </div>
+</section>
+{%endblock%}
